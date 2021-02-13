@@ -170,6 +170,20 @@ class _BodyLayoutstate extends State<BodyLayout> {
                 print('Thor: The dark world');
               },
             ),
+            ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/raknarok.jpg'),
+              ),
+              title: Text('Thor: Raknarok'),
+              subtitle: Text('Price: \$880'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+              onTap: () {
+                setState(() {
+                  _price += 880;
+                });
+                print('Thor: Raknarok');
+              },
+            ),
           ],
         ),
       ),
